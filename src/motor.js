@@ -1,3 +1,26 @@
+const datosMotor = [
+	{
+		tipoNomina: 'A',
+		fechaPrimerEmpleo: new Date('2022-06-12'),
+		genero: 'f',
+	},
+	{
+		tipoNomina: 'B',
+		fechaPrimerEmpleo: new Date('1993-12-30'),
+		genero: 'f',
+	},
+	{
+		tipoNomina: 'C',
+		fechaPrimerEmpleo: new Date('2020-09-19'),
+		genero: 'm',
+	},
+	{
+		tipoNomina: 'D',
+		fechaPrimerEmpleo: new Date('2019-01-15'),
+		genero: 'm',
+	},
+];
+
 function calculoMotor(tipoNomina, fechaPrimerEmpleo, genero) {
 	const fechaActual = new Date();
 
@@ -68,20 +91,4 @@ function calculoMotor(tipoNomina, fechaPrimerEmpleo, genero) {
 		recomendacionLinea: recomendacionLinea,
 	};
 }
-
-datosMotor.forEach((dato) => {
-	const resultado = calculoMotor(
-		dato.tipoNomina,
-		dato.fechaPrimerEmpleo,
-		dato.genero,
-	);
-	console.log(
-		`Tipo: ${
-			dato.tipoNomina
-		}, Fecha: ${dato.fechaPrimerEmpleo.toLocaleDateString()}, Género: ${
-			dato.genero
-		}, Min: ${resultado.montoMinimo}, Max: ${resultado.montoMaximo}, Línea: ${
-			resultado.recomendacionLinea
-		}`,
-	);
-});
+console.log('motor.js cargado');
