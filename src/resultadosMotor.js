@@ -1,10 +1,9 @@
-// resultadosMotor.js
 function generarTablaResultados(calculoMotor) {
 	const tabla = document.createElement('table');
 	tabla.style.borderCollapse = 'collapse';
 	tabla.style.width = '100%';
 
-	// Encabezado de la tabla
+	
 	const encabezado = tabla.createTHead();
 	const filaEncabezado = encabezado.insertRow();
 	const columnasEncabezado = [
